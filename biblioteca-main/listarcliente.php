@@ -1,7 +1,7 @@
 <?php
-    include 'conexao.php'
+    include 'conexao.php';
 
-    $sql = "SELECT * FROM cliente"
+    $sql = "SELECT * FROM cliente";
     $resultado = $mysqli->query($sql);
 
     if ($resultado->num_rows > 0) {

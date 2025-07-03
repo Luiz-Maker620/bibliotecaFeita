@@ -1,7 +1,7 @@
 <?php
-    include 'conexao.php'
+    include 'conexao.php';
 
-    $sql = "SELECT * FROM bibliotecario"
+    $sql = "SELECT * FROM bibliotecario";
     $resultado = $mysqli->query($sql);
 
     if ($resultado->num_rows > 0) {
@@ -23,7 +23,7 @@
 
         echo "</table>";
        } else {
-            echo "<p>Nenhum setor cadastrado</p>";
+            echo "<p>Nenhum bibliocario cadastrado</p>";
             }    
 
 ?>

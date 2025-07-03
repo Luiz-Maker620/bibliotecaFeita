@@ -1,21 +1,21 @@
 <?php
 
-   include 'conexao.php'
+   include 'conexao.php';
 
      if ($_SERVER["REQUEST_METHOD"] == "POST")  {
-      $nomeSetor = $_POST ['nomeSetor'];
-      $generoSetor = $_POST ['generoSetor'];
-      $idlivro = $_POST ['idlivro'];
+          $nomeSetor = $_POST ['nomeSetor'];
+          $generoSetor = $_POST ['generoSetor'];
  
-      $sql = "INSERT INTO cliente (nomeCliente, setor, idlivro)
-              VALUES ('$nomeLivro','$setor','$idlivro')";
+      $sql = "INSERT INTO setor (nomeSetor, generoSetor)
+              VALUES ('$nomeSetor','$generoSetor')";
  
       if ($mysqli-> query($sql) ) {
           echo 'setor cadastrado';
       } else {
-           echo 'erro' . $mysqli->erro;
+           echo 'Erro' . $mysqli->erro;
       }
 
  }
 
 ?>
+
