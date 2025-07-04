@@ -3,7 +3,7 @@
    include 'conexao.php';
 
      if ($_SERVER["REQUEST_METHOD"] == "POST")  {
-          $nomeBibliotecario = $_POST ['nomebibliotecario'];
+          $nomeBibliotecario = $_POST ['nome'];
           $email = $_POST ['email'];
  
       $sql = "INSERT INTO bibliotecario (nomeBibliotecario, email)
