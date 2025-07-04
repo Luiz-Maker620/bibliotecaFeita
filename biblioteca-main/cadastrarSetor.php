@@ -3,7 +3,7 @@
    include 'conexao.php';
 
      if ($_SERVER["REQUEST_METHOD"] == "POST")  {
-          $nomeSetor = $_POST ['nomeSetor'];
+          $nomeSetor = $_POST ['nome'];
           $generoSetor = $_POST ['generoSetor'];
  
       $sql = "INSERT INTO setor (nomeSetor, generoSetor)
